@@ -1,0 +1,4 @@
+In this lesson, I learned :
+* Potential Harms that can be caused for accepting invalid inputs
+* htmlspecialchars() method which converts all the applicable characters to HTML entities. Converting the original input into HTML entities decreases the risk accepting any scripts or other styling.
+* about different measures that one can take to avoid accepting invalid or potentially malicious inputs.

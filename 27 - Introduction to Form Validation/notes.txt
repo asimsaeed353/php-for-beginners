@@ -1,0 +1,26 @@
+In the lesson 27, I learnt:
+
+* PHP isset Function:
+        isset($variable) returns 'true' if the variable has some value and 'false' if variable is NULL.
+
+* how to apply different types of validation checks on form inputs.
+
+* use 'required' attribute in html <textarea> to avoid users inputting empty forms. It is client side validation and can be by-passed using the following command:
+ '
+ curl -X POST https://localhost:8888/notes/create -d 'body='
+'
+ Use server-side validation to avoid accepting empty inputs.
+* apply validation on lengths of characters a user can input
+* for a single input form, there must be multiple validation violations you need to check against.
+
+* reserving form data so user don't have to write everything from all over again in case user inputs invalid form data.
+
+    (i) Old Method to retain the form input even after submitting it
+        <textarea>
+            <?= isset($_POST['body']) ? $_POST['body'] : '' ?>
+        </textarea>
+
+    (ii) Modern Method using 'NULL COALESCING' operator
+        <textarea>
+                    <?= $_POST['body'] ?? '' ?>
+                </textarea>

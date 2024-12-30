@@ -1,0 +1,3 @@
+In the lesson 29, I learnt:
+
+*  Some basic refractoring. For example, if we have a page to create a note, it's path should be as '/notes/create.php' or if we have a page to create a user, the path should look like 'user/create.php'. This is easy to navigate.

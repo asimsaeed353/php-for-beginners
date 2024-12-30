@@ -1,0 +1,6 @@
+In the lesson 32, I learnt:
+
+*  Why Refactoring is done:
+    There must be some pain points that drive a particular refactor.
+
+* Adding a 'Delete Node' button.

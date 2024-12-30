@@ -11,46 +11,47 @@ $config = require base_path('config.php');
 
 // make an instance of Database class
 $db = new Database($config['database']);
+$currentUserId = 12;
 
-//$heading = "Note";
-
-//dd($_GET['id']);
-
-//$id = $_GET['id'];
-
-//'select * from notes where /* user_id = :user and */ id = :id'
-
-$note = $db->query('select * from notes where id = :id', [
-//    'user' => 1,
-    'id' => $_GET['id']
-])->findOrFail();
+// If 'Delete a Note' request is made
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 
-/*
-// if user tries to access note which is not in the database
-if(! $note){
-    abort();
+    /* Authorize the user */
+    // check if the person who's making a 'delete note' request is authorized to do so
+    $note = $db->query('select * from notes where id = :id', [
+        //    'user' => 1,
+        'id' => $_GET['id']
+    ])->findOrFail();
+
+    authorize($note ['user_id'] === $currentUserId);
+
+    view("notes/show.view.php", [
+        'heading' => 'Note',
+        'note' => $note
+    ]);
+
+    /* Delete the current note */
+    // Form was submitted : Delete the current note
+    $db->query('delete from notes where id = :id', [
+        'id' => $_GET['id']
+    ]);
+
+    // when the note is deleted, redirect the user to the 'My Notes' page
+    header('location: /notes');
+    exit();
+
+} else{
+
+    $note = $db->query('select * from notes where id = :id', [
+    //    'user' => 1,
+        'id' => $_GET['id']
+    ])->findOrFail();
+
+    authorize($note ['user_id'] === $currentUserId);
+
+    view("notes/show.view.php", [
+        'heading' => 'Note',
+        'note' => $note
+    ]);
 }
-
-
-
-$currentUserId = 1;
-//$forbidden = 403;
-
-// is user is not authorized to access the note(s) i.e. user is not creator of the note
-if($note ['user_id'] !== $currentUserId){
-    abort(Response::FORBIDDEN);
-}
-
-*/
-
-$currentUserId = 1;
-authorize($note ['user_id'] === $currentUserId);
-
-
-//require "views/notes/show.view.php";
-
-view("notes/show.view.php", [
-    'heading' => 'Note',
-    'note' => $note
-]);

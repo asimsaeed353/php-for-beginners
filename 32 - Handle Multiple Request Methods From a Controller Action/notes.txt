@@ -3,4 +3,12 @@ In the lesson 32, I learnt:
 *  Why Refactoring is done:
     There must be some pain points that drive a particular refactor.
 
-* Adding a 'Delete Node' button.
+* 'Idempotency' refers to an operation that can be performed multiple times without changing the result beyond the initial application.
+
+* Adding a 'Delete Node' button:
+    -> Is it appropriate to add an anchor tag for delete button? No
+    -> You should use anchor tags for idempotent things i.e. which gonna yield the same output no matter how many requests you make.
+    -> On the other hand, operations like "deleting a node", you should not use anchor tags. Instead you can use <form>.
+    -> If you want to submit a delete note request, don't do it by adding a new route, instead do it using restful approach and submit that delete request to the note endpoint.
+    -> The problem is, forms don't know how to proceed a "delete" request. So, we need to communicate that.
+

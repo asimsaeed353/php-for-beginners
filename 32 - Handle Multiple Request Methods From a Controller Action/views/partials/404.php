@@ -8,7 +8,7 @@
 <body class="h-full">
 
 <div class="min-h-full">
-    <?php require ('views/partials/nav.php') ?>
+    <?php require base_path('views/partials/nav.php') ?>
 
 <!--    --><?php //require ('views/partials/header.php') ?>
 

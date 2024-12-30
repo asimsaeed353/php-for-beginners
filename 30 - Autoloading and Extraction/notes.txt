@@ -1,0 +1,3 @@
+In the lesson 30, I learnt:
+
+*  Extracting files into namespace, organizing files and making methods to generate paths to home directory for seamless referrencing.

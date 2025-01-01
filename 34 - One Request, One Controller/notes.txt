@@ -1,4 +1,3 @@
 In the lesson 34, I learnt:
 
-* Building a better router
-* cleaning up code for better understanding
+* routing create a new note action and deleting a note action

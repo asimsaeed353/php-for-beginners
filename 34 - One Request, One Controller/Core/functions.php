@@ -1,5 +1,8 @@
 <?php
 
+
+// the functions in this file will be used in all php controller files.
+
 use Core\Response;
 
 function dd($superGlobal)
@@ -29,8 +32,6 @@ function authorize($condition, $status = Response::FORBIDDEN){
     if(! $condition){
         abort($status);
     }
-
-    return true;
 }
 
 // create a base_path generator

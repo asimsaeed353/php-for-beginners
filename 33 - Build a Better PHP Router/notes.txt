@@ -1,0 +1,4 @@
+In the lesson 33, I learnt:
+
+* Building a better router
+* cleaning up code for better understanding

@@ -1,0 +1,13 @@
+In the lesson 36, I learnt:
+
+* Updating a Note using PATCH Requests
+
+* Convention we followed :
+    /controllers/notes/
+        -> index.php : listing down all notes
+        -> create.php : a form for adding a new note to the database record
+        -> destroy.php : delete a note
+        -> edit.php : form that allows authorized user to edit the note
+        -> show.php : show a single note
+        -> store.php : storing a note after form submission in create.php
+        -> update.php : update the record in the database after user edited a note

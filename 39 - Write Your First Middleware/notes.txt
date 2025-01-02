@@ -1,0 +1,8 @@
+In the lesson 39, I learnt:
+
+* We left a BUG in lesson 38 which was 'if a new user has logged in and he/she accesses the registration page, he/she could register as any other user and logged in as that user'. We needed to implement some kind of measure to solve that bug.
+
+* Adding methods to check only guest user can have access to registration page and only authorized users could access notes page.
+
+* Middleware : A bridge between request and core of an application.
+    -> In this lesson, the middleware will perform user authorization.

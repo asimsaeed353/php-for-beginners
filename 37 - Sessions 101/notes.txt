@@ -1,0 +1,11 @@
+In the lesson 37, I learnt:
+
+* What is a session?
+    -> A period of time devoted to a specific activity.
+    -> Sessions are not permanent.
+    -> In order to interact with superglobal $_SESSION, you must first start session using function session_start()
+    -> Once you close the browser, the session data is erased.
+    -> If you customize some $_SESSION data, then it will not be populated until you load the page where that data is initialized.
+    -> Session information is stored in Cookies, if you delete a cookie and reload the browser then a new session will start.
+    -> Data of each session is also stored in a temporary file in server files/directories.
+

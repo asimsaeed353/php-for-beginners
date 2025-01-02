@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/31 - Namespacing What, Why, How" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/32 - Handle Multiple Request Methods From a Controller Action" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/33 - Build a Better PHP Router" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/34 - One Request, One Controller" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/35 - Make Your First Service Container" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

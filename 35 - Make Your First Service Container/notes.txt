@@ -1,0 +1,9 @@
+In the lesson 35, I learnt:
+
+* How to build a service container, keep in mind you might won't be building such service containers because there are several more sophisticated tools that are provided by the frameworks.
+
+* In previous lessons, we had to instantiate database object in every single file where we wanted to run sql. We got rid of that mess in this lesson
+
+* We threw that code of instantiating a database object into a container and we pulled it out everytime we needed it
+
+* Static function is the one which can be called without instantiating any object.

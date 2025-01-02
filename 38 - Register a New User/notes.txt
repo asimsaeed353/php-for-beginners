@@ -1,0 +1,6 @@
+In the lesson 38, I learnt:
+
+* if a form makes a post request, for example a sign in form has made a POST request. The post request ($_POST super-global) will hold data like user's email and password. and you can dump that on screen.
+
+
+*

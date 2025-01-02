@@ -1,0 +1,5 @@
+In the lesson 40, I learnt:
+
+* Hashing function provided by the PHP which converts plain text string into hashed string:
+    -> password_hash('password_string', hashing_algo)
+    -> Example: password_hash( $password, PASSWORD_BCRYPT)

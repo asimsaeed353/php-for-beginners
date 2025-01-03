@@ -1,0 +1,6 @@
+In the lesson 43, I learnt:
+
+* Extracting user authentication methods into an Authenticator class
+* some code refactoring and styling
+
+

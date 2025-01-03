@@ -1,0 +1,16 @@
+In the lesson 41, I learnt:
+
+* PHP provides a function that verify a password input by the user against a 'Hashed password' stored in the database:
+    password_verify($password, $user['password']);
+
+* Loggin out user:
+    -> it should be a post request and rather using an anchor tag, you can use a form.
+
+* To destroy a session's data:
+    -> Clear the super-global $_SESSION
+        $_SESSION = [];
+    -> run the session destroy function to clear the cookie that is stored in the browser
+        -> session_destroy();
+        -> set a cookie:
+            -> setcookie('cookie_name', 'cookie_value', 'expiry_time', 'path', 'domain_name');
+

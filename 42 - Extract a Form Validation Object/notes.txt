@@ -1,0 +1,5 @@
+In the lesson 42, I learnt:
+
+* Extracting validation methods in a separate validation class
+
+

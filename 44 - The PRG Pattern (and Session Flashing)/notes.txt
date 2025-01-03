@@ -1,0 +1,11 @@
+In the lesson 44, I learnt:
+
+* In our current implementation of Login form, if the validation fails, and you reload the page, it's gonna make post request again and again and will face the error again and again.
+    -> So the validation error persisted the whole session, we are going to solve this bug.
+
+* PRG Pattern is there to solve the problem.
+    -> P => POST , R => REDIRECT, G => GET
+    -> If a POST request fails, we are going to REDIRECT the user and make a GET request.
+
+* Errors should not persist to other user's sessions or generally to other sessions. They should be flashed to the session and then immediately expired.
+
